@@ -77,8 +77,6 @@ GEM
     ast (2.4.3)
     base64 (0.3.0)
     bcrypt_pbkdf (1.1.1)
-    bcrypt_pbkdf (1.1.1-arm64-darwin)
-    bcrypt_pbkdf (1.1.1-x86_64-darwin)
     benchmark (0.4.1)
     bigdecimal (3.2.2)
     bindex (0.8.1)
@@ -115,13 +113,30 @@ GEM
     erubi (1.13.1)
     et-orbi (1.2.11)
       tzinfo
+    ffi (1.17.2-aarch64-linux-gnu)
+    ffi (1.17.2-aarch64-linux-musl)
+    ffi (1.17.2-arm-linux-gnu)
+    ffi (1.17.2-arm-linux-musl)
     ffi (1.17.2-x86_64-linux-gnu)
+    ffi (1.17.2-x86_64-linux-musl)
     fugit (1.11.1)
       et-orbi (~> 1, >= 1.2.11)
       raabro (~> 1.4)
     globalid (1.2.1)
       activesupport (>= 6.1)
+    google-protobuf (4.31.1)
+      bigdecimal
+      rake (>= 13)
+    google-protobuf (4.31.1-aarch64-linux-gnu)
+      bigdecimal
+      rake (>= 13)
+    google-protobuf (4.31.1-aarch64-linux-musl)
+      bigdecimal
+      rake (>= 13)
     google-protobuf (4.31.1-x86_64-linux-gnu)
+      bigdecimal
+      rake (>= 13)
+    google-protobuf (4.31.1-x86_64-linux-musl)
       bigdecimal
       rake (>= 13)
     i18n (1.14.7)
@@ -188,10 +203,6 @@ GEM
     nokogiri (1.18.9-arm-linux-gnu)
       racc (~> 1.4)
     nokogiri (1.18.9-arm-linux-musl)
-      racc (~> 1.4)
-    nokogiri (1.18.9-arm64-darwin)
-      racc (~> 1.4)
-    nokogiri (1.18.9-x86_64-darwin)
       racc (~> 1.4)
     nokogiri (1.18.9-x86_64-linux-gnu)
       racc (~> 1.4)
@@ -264,7 +275,7 @@ GEM
     regexp_parser (2.10.0)
     reline (0.6.2)
       io-console (~> 0.5)
-    rexml (3.4.1)
+    rexml (3.4.4)
     rubocop (1.79.0)
       json (~> 2.3)
       language_server-protocol (~> 3.17.0.2)
@@ -295,8 +306,18 @@ GEM
       rubocop-performance (>= 1.24)
       rubocop-rails (>= 2.30)
     ruby-progressbar (1.13.0)
-    rubyzip (2.4.1)
+    rubyzip (3.1.1)
+    sass-embedded (1.89.2-aarch64-linux-gnu)
+      google-protobuf (~> 4.31)
+    sass-embedded (1.89.2-aarch64-linux-musl)
+      google-protobuf (~> 4.31)
+    sass-embedded (1.89.2-arm-linux-gnueabihf)
+      google-protobuf (~> 4.31)
+    sass-embedded (1.89.2-arm-linux-musleabihf)
+      google-protobuf (~> 4.31)
     sass-embedded (1.89.2-x86_64-linux-gnu)
+      google-protobuf (~> 4.31)
+    sass-embedded (1.89.2-x86_64-linux-musl)
       google-protobuf (~> 4.31)
     sassc (2.4.0)
       ffi (~> 1.9)
@@ -307,11 +328,13 @@ GEM
       sprockets-rails
       tilt
     securerandom (0.4.1)
-    selenium-webdriver (4.34.0)
+    selenium-webdriver (4.36.0)
       base64 (~> 0.2)
+      json (<= 2.13.2)
       logger (~> 1.4)
+      prism (~> 1.0, < 1.5)
       rexml (~> 3.2, >= 3.2.5)
-      rubyzip (>= 1.2.2, < 3.0)
+      rubyzip (>= 1.2.2, < 4.0)
       websocket (~> 1.0)
     solid_cable (3.0.11)
       actioncable (>= 7.2)
@@ -341,8 +364,6 @@ GEM
     sqlite3 (2.7.3-aarch64-linux-musl)
     sqlite3 (2.7.3-arm-linux-gnu)
     sqlite3 (2.7.3-arm-linux-musl)
-    sqlite3 (2.7.3-arm64-darwin)
-    sqlite3 (2.7.3-x86_64-darwin)
     sqlite3 (2.7.3-x86_64-linux-gnu)
     sqlite3 (2.7.3-x86_64-linux-musl)
     sshkit (1.24.0)
@@ -358,8 +379,6 @@ GEM
     thor (1.4.0)
     thruster (0.1.14)
     thruster (0.1.14-aarch64-linux)
-    thruster (0.1.14-arm64-darwin)
-    thruster (0.1.14-x86_64-darwin)
     thruster (0.1.14-x86_64-linux)
     tilt (2.6.1)
     timeout (0.4.3)
@@ -394,8 +413,6 @@ PLATFORMS
   aarch64-linux-musl
   arm-linux-gnu
   arm-linux-musl
-  arm64-darwin
-  x86_64-darwin
   x86_64-linux
   x86_64-linux-gnu
   x86_64-linux-musl
